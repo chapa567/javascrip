@@ -1,0 +1,52 @@
+<html>
+<body>
+<script>
+
+    //literales
+//Array:
+
+var hermanos =["sandra", "geovany", "paola"];
+document.write(hermanos[1]);
+
+//Boolean
+var boleano = false;
+
+//ntegers,
+015, 0001,  -077 (octal, base8);
+
+
+//Flotantes
+3.1415;
+
+//Objetos
+var Ventas = "Toyota";
+
+function TiposCarro(nombre) {
+  if (nombre== "Honda") {
+    return nombre;
+  } else {
+    return "Lo siento, nosotros no vendemos " + nombre + ".";
+  }
+}
+
+var carro = { miCarro: "Saturn", getCarro: TiposCarro("Honda"), especial: Ventas};
+
+console.log(carro.miCarro);  // Saturn
+console.log(carro.getCarro); // Honda
+console.log(carro.especial); // Toyota
+
+
+//RegExp
+var re = /ab+c/;
+
+//String
+"foo"
+'bar'
+"1234"
+"Una linea \n otra linea"
+"El gato de Jhon"
+console.log("El gato de Jhon".length)
+
+</script>
+</html>
+</body>

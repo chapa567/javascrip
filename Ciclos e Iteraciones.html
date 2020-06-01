@@ -1,0 +1,85 @@
+<html>
+<body>
+<script>
+//Ciclos e Iteraciones
+   
+//for
+    for (var i = 0; i < 9; i++) {
+   n += i;
+   mifuncion(n);
+}
+
+
+//while
+n = 0;
+x = 0;
+while (n < 3) {
+  n++;
+  x += n;
+}
+
+
+//do..while
+do {
+  i += 1;
+  console.log(i);
+} while (i < 5);
+
+
+//Label:
+markLoop:
+while (theMark == true) {
+   doSomething();
+}
+
+//Break
+
+for (i = 0; i < a.longitud; i++) {
+  if (a[i] == elValor) {
+    break;
+  }
+}
+
+//Continue
+i = 0;
+n = 0;
+while (i < 5) {
+  i++;
+    if (i == 3) {
+      continue;
+    }
+  n += i;
+}
+
+//For..in
+function volcar_propiedades(obj, obj_nombre) {
+  var resultado = "";
+  for (var i in obj) {
+    resultado += obj_nombre + "." + i + " = " + obj[i] + "<br>";
+  }
+  resultado += "<hr>";
+  return resultado;
+}
+
+//For...of
+
+let arr = [3, 5, 7];
+arr.foo = "hello";
+
+for (let i in arr) {
+   console.log(i); 
+}
+
+for (let i of arr) {
+   console.log(i); 
+}
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

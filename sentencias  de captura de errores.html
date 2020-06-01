@@ -1,0 +1,31 @@
+<html>
+<body>
+<script>
+class Limites extends Exception {}
+class demasiadoCalor extends Limites {}
+class demasiadoFrio extends Limites {}
+class demasiadoRapido extends Limites {}
+class demasiadoCansado extends Limites {}
+    try {
+        if( temp > 40 )
+            throw( new demasiadoCalor());
+        if( dormir < 8 )
+            throw( new demasiadoCansado());
+    } catch( Limiteslim) {
+        if( lim instanceof demasiadoCalor ) {
+            System.out.println( "Capturada excesivo calor!" );
+            return;
+            }
+        if( lim instanceof demasiadoCansado ) {
+            System.out.println( "Capturada excesivo cansancio!" );
+            return;
+            }
+    } finally{
+        System.out.println( "En la clausula finally" );
+    }
+        
+
+
+</script>
+</body>
+</html>

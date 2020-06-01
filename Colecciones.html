@@ -1,0 +1,33 @@
+<html>
+<body>
+<script>
+//Colecciones
+//Array
+var arr = new Array(arrayLength);
+var arr = Array(arrayLength);
+
+// Esto tiene exactamente el mismo efecto
+var arr = [];
+arr.length = arrayLength;
+
+
+//Metodos Array
+var myArray = new Array("1", "2", "3");
+myArray = myArray.concat("a", "b", "c"); 
+// myArray is now ["1", "2", "3", "a", "b", "c"]
+
+//Matrices
+var a = new Array(4);
+for (i = 0; i < 4; i++) {
+  a[i] = new Array(4);
+  for (j = 0; j < 4; j++) {
+    a[i][j] = "[" + i + "," + j + "]";
+  }
+}
+
+
+
+
+</script>
+</body>
+</html>

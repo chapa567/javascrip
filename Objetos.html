@@ -1,0 +1,54 @@
+<html>
+<body>
+<script>
+//Propiedades
+var miAuto = new Object();
+miAuto.marca = "Ford";
+miAuto.modelo = "Mustang";
+miAuto.año = 1969;
+
+//Funciones de Listado
+function listaTodasLasPropiedades(o){
+   var objetoAInspeccionar;
+   var resultado = [];
+
+   for(objetoAInspeccionar = o; objetoAInspeccionar !== null; objetoAInspeccionar = Object.getPrototypeOf(objetoAInspeccionar)){
+      resultado = resultado.concat(Object.getOwnPropertyNames(objetoAInspeccionar)) + "\n";
+   }   
+
+   return resultado; 
+
+}
+
+//Constructores
+function Auto(marca, modelo, annio) {
+  this.marca = marca;
+  this.modelo = modelo;
+  this.annio = annio;
+}
+
+//Herencia
+nombreDelObjeto.nombreDelMetodo = nombreDeLaFuncion;
+
+  var miObjeto = {
+       miMetodo: function(parametros) {
+         // ...hacer algo
+      },
+      //O ESTO TAMBIÉN FUNCIONA
+      miOtroMetodo(parametros){
+         // ... hacer otra cosa
+     }
+}; 
+
+//comparacion
+// variable de referencia del objeto fruta
+var fruta = {nombre: "manzana"};
+
+// variable de referencia del objeto fructificar
+var fructificar = {nombre: "manzana"};
+
+fruta == fructificar // retorna false
+fruta === fructificar // retorna false
+</script>
+</body>
+</html>
